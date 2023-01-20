@@ -1,24 +1,33 @@
-# README
+# Some News
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Some News is a Pet Project on Rails. It's the site with some third sources data parsed by our app.
 
-Things you may want to cover:
+## Ruby version
+Ruby -- 3.0.2
 
-* Ruby version
+Rails -- 7.0.3
 
-* System dependencies
+## Main stack
 
-* Configuration
+Ruby Rails Rspec Capybara Devise
 
-* Database creation
+## Database creation
+`rails db:create` will create dev and test DBs.
 
-* Database initialization
+Remember that TEST DB will be cleaned up before tests running.
 
-* How to run the test suite
+## Development instructions
 
-* Services (job queues, cache servers, search engines, etc.)
+The main repository is https://github.com/BlinovA25/some-news. 
 
-* Deployment instructions
+We are using TDD approach. 
 
-* ...
+Steps for creation new functionality or fixes:
+
+* create new branch(start with `feature/branch_name` or `fix/branch_name`)
+* write tests for future functionality
+* make sure your tests not passed
+* write your code
+* make sure your tests passed
+* create a PR to merge your branch with `Main`
+
