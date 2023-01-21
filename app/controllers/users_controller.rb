@@ -2,6 +2,10 @@ class UsersController < ApplicationController
   before_action :authenticate_user!
   before_action :set_user, only: %i[ show edit update destroy ]
 
+  def authenticate_user!
+    redirect_to '/users/sign_in' unless current_user
+  end
+
   # GET /users or /users.json
   def index
     @users = User.all
@@ -67,6 +71,6 @@ class UsersController < ApplicationController
 
   # Only allow a list of trusted parameters through.
   def user_params
-    params.require(:user).permit(:name, :date_joined)
+    params.require(:user).permit(:email)
   end
 end
