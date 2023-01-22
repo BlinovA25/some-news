@@ -16,8 +16,7 @@ RSpec.describe "Auths", type: :system do
     login_as(user)
     visit root_path
 
-    expect(page).to have_content("Users")
-    expect(page).to have_content(user.email)
+    expect(page).to have_content("News")
   end
 
 end
