@@ -12,11 +12,12 @@ RSpec.describe "Auths", type: :system do
   end
 
   it "redirect_to login page if user been authorized" do
-    login_as(create(:user))
+    user = create(:user)
+    login_as(user)
     visit root_path
 
     expect(page).to have_content("Users")
-    expect(page).to have_content(User.find(1).email)
+    expect(page).to have_content(user.email)
   end
 
 end

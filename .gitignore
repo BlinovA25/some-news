@@ -30,5 +30,27 @@
 # Ignore master key for decrypting credentials and more.
 /config/master.key
 
-.idea/
-*.iml
+*~
+*.cache
+*.log
+*.pid
+tmp/**/*
+tmp/*
+.DS\_Store
+db/cstore/**
+doc/api
+doc/app
+doc/plugins
+coverage/*
+db/*.sqlite3
+*.tmproj
+*.bak
+*.min.css
+*.min.js
+*.min.css.gz
+*.min.js.gz
+*/.#*
+*/*/.#*
+*.o
+*.bundle
+Makefile
