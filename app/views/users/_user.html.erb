@@ -1,0 +1,12 @@
+<p>
+  <strong>ID:</strong>
+  <%= user.id %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= user.email %>
+</p>
+
+<%= link_to "Edit this user", edit_user_path(user) %>
+<%= button_to "Destroy this user", @user, method: :delete %>
