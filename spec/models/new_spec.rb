@@ -1,5 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe New, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  it "News factory works fine" do
+    expect { FactoryBot.create(:new) }.to change { New.all.count }.by(1)
+  end
 end

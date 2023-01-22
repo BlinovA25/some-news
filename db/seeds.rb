@@ -1,8 +1,10 @@
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
 
-
 New.destroy_all
+User.destroy_all
+
+User.create!(email: "admin@some-mail.com", password: "qwerty")
 
 New.create!(title: "Attention: Scam bot", category: "Programming", text: "SCAM_BOT is a pet project based on Ruby language. The main idea is to create a telegram bot, that can ask user for addind their credit cart and try to transfer money(looks like scam...).", source_link: "https://github.com/BlinovA25/scam_bot")
 

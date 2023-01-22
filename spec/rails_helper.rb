@@ -30,6 +30,8 @@ begin
   # Clean up DB before running all tests
   DatabaseCleaner.strategy = :truncation
   DatabaseCleaner.clean
+
+  Rails.application.load_seed
 rescue ActiveRecord::PendingMigrationError => e
   abort e.to_s.strip
 end
