@@ -1,0 +1,16 @@
+<div class="whole-margin">
+  <p style="color: green"><%= notice %></p>
+
+  <h1>News</h1>
+
+  <h3>Search conditions</h3>
+
+  <div>
+    <% @news.each do |new| %>
+      <div class="one-new">
+        <%= render new %>
+      </div>
+    <% end %>
+  </div>
+
+</div>
