@@ -7,12 +7,8 @@
     <% @users.each do |user| %>
       <div class="one-user">
         <%= render user %>
-        <p>
-          <%= link_to "Show this user", user %>
-        </p>
       </div>
     <% end %>
   </div>
 
-  <%#= link_to "New user", new_user_path %>
 </div>
