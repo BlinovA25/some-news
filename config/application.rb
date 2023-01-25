@@ -26,6 +26,7 @@ module SomeNews
                        helper_specs: false,
                        routing_specs: false
                       )
+      config.active_job.queue_adapter = :resque
     end
   end
 end
